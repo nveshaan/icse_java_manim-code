@@ -7,7 +7,7 @@ class Blank(Scene):
     
 class course(Scene):
    def construct(self):
-      java = SVGMobject("/content/drive/MyDrive/Manim/drawing-2.svg").scale(3).move_to(RIGHT*3.8).shift(DOWN*0.3)
+      java = SVGMobject("Media/drawing-2.svg").scale(3).move_to(RIGHT*3.8).shift(DOWN*0.3)
       learn = Text("LEARN JAVA", font="Chivo", weight="ULTRAHEAVY").next_to(java, LEFT).scale(1.5).shift(UP*0.3)
       title = Text("Course Overview", font="Noto Sans Mono").next_to(learn, DOWN*0.5).scale(0.45)
       
@@ -18,9 +18,9 @@ class course(Scene):
       
 class JAVAintro(Scene):
    def construct(self):
-      java = SVGMobject("/content/drive/MyDrive/Manim/Java_(programming_language)-Logo.wine.svg").scale(3)
-      james = ImageMobject("/content/drive/MyDrive/Manim/jamesgosling1642web.jpg").scale(0.4).shift(RIGHT*3).set_opacity(0.8)
-      android = SVGMobject("/content/drive/MyDrive/Manim/android.svg").scale(3)
+      java = SVGMobject("Media/Java_(programming_language)-Logo.wine.svg").scale(3)
+      james = ImageMobject("Media/jamesgosling1642web.jpg").scale(0.4).shift(RIGHT*3).set_opacity(0.8)
+      android = SVGMobject("Media/android.svg").scale(3)
       
       self.play(DrawBorderThenFill(java), run_time=2)
       self.wait(0.5)
@@ -31,7 +31,7 @@ class JAVAintro(Scene):
       
 class android(Scene):
    def construct(self):
-      android = SVGMobject("/content/drive/MyDrive/Manim/android.svg").scale(3)
+      android = SVGMobject("Media/android.svg").scale(3)
       
       self.play(GrowFromCenter(android), runtime=0.2, rate_func=rate_functions.ease_out_sine)
       self.wait(2)
@@ -62,7 +62,7 @@ class eshaan(Scene):
       
 class course(Scene):
    def construct(self):
-      java = SVGMobject("/content/drive/MyDrive/Manim/drawing-2.svg").scale(3).move_to(RIGHT*3.8).shift(DOWN*0.3)
+      java = SVGMobject("Media/drawing-2.svg").scale(3).move_to(RIGHT*3.8).shift(DOWN*0.3)
       learn = Text("LEARN JAVA", font="Chivo", weight="ULTRAHEAVY").next_to(java, LEFT).scale(1.5)
 
       self.play(SpinInFromNothing(java))
@@ -72,14 +72,14 @@ class course(Scene):
 
 class icse(Scene):
    def construct(self):
-      icse = ImageMobject("/content/drive/MyDrive/Manim/Picture2.png").scale(3)
+      icse = ImageMobject("Media/Picture2.png").scale(3)
 
       self.play(FadeIn(icse))
       self.wait(6)
       
 class github(Scene):
    def construct(self):
-      git = ImageMobject("/content/drive/MyDrive/Manim/Picture1.png")
+      git = ImageMobject("Media/Picture1.png")
       box = RoundedRectangle(corner_radius=0.05, height=0.33, width=2.7, color="#1cbd1c").shift(UP*3.53, LEFT*4)
 
       self.add(git)
